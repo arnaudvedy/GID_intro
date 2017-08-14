@@ -15,15 +15,24 @@
 - Quick overview of  columns
 
 #### How is this data generated and how often is it updated?
-- Thanks to our data automation system, Poseidon, the GID datasets are updated hourly. In other words, you always have access to the most recent data.
+- Thanks to our data automation system, [Poseidon](https://data.sandiego.gov/stories/why-data-automation-matters-data-portals/), the GID datasets are updated hourly. In other words, you always have access to the most recent data.
 - Our data is generated as following:
-![GID worflow](/img/poseidon.png)
+![GID workflow](/img/poseidon.png)
 
-## 2. Exercise 1 -  Exploring GID data in a GIS environment
-## 3. Exercise 2 - Exploring GID data in Python
+## 2. Getting ready for the workshop
+- To minimize setup time, we will be booting to a live OS in persistent mode. For this workshop we will be using [OSGEO Live](https://live.osgeo.org/en/index.html), as it already contains most of the tools needed for data analysis and spatial analysis. 
+- Once OSGEO running, create a project folder in your `/home` directory:	
+`mkdir gid-intro && cd gid-intro`
+- Now download the latest GID dataset:	
+`wget http://seshat.datasd.org/get_it_done_311/get_it_done_311_requests_datasd.csv`
+- You are all set!
 
+## 3. Exercise 1 -  Exploring GID data in a GIS environment
+- We will start by opening the csv file in QGIS. Now, the file we have downloaded is not your typical geo-dataset in shapefile or geojson format. However, it contains `latitude` and `longitude` columns that we can take advantage of.
 
-## 4. What's next?
+## 4. Exercise 2 - Exploring GID data in Python
+
+## 5. What's next?
 So you now have more context about Get It Done data 
 
 What you should know as a developer:
